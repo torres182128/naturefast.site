@@ -1,0 +1,208 @@
+.link{
+	display: grid;
+	grid-gap: 10px;
+	justify-content: center;
+}
+.link a{
+	background: #D0021B;
+	padding: 10px 40px;
+	color: #FFF;
+	font-size: 1.2rem;
+	font-weight: 600;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.link a:hover{
+	color: #FFF !important;
+}
+.link span{
+	text-align: center;
+	color: #FFF;
+}
+.link span::before{
+	content: "";
+	background: url(../file/chield.svg) no-repeat center/1rem;
+	padding: 10px;
+	display: inline;
+}
+
+
+.alerta .midle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.alerta p{
+	color: #000;
+	font-weight: 600;
+	font-size: .9rem;
+	text-align: center;
+}
+
+
+.header{
+	background: transparent;
+	background: linear-gradient(180deg, #8D0018 0%, #D70024 100%);
+	position: relative;
+}
+.header svg{
+	transform: rotate(180deg);
+	height: 50px;
+	width: 100%;
+	position: relative;
+	bottom: -2px;
+}
+.header h1.midle{
+	padding: 50px 0 20px;
+}
+.header div.midle{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	padding: 0 20px 30px;
+	align-items: center;
+}
+.header .info{
+	display: grid;
+	grid-gap: 20px;
+	align-content: flex-start;
+}
+.header h1{
+	width: 100%;
+	text-align: center;
+	display: block;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 2.2rem;
+}
+.header h1 *{
+	font-weight: 900;	
+}
+.header h2{
+	color: #EEE;
+	width: 100%;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+.header ul li{
+	width: 100%;
+	color: #FFF;
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+.header ul li::before{
+	content: "";
+	background: url(../file/check.svg) no-repeat center/1.3rem;
+	padding: 10px;
+	display: inline;
+	margin-right: 5px;
+}
+.header .link a:hover,
+.header .link a{
+	background: #FFF;
+	color: #D70024 !important;
+}
+.header .link span::before{
+	filter: invert();
+}
+
+
+.promise{
+	position: relative;
+}
+.promise .midle{
+	display: flex;
+	flex-direction: column;
+	grid-gap: 20px;
+	padding: 60px 20px;
+	align-items: center;
+}
+.promise .midle h2{
+	padding: 10px 60px;
+	border-radius: 5px;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #2F4F4F;
+}
+.promise .midle h3{
+	font-weight: 700;
+	color: #B02700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.promise .midle h3 *{
+	font-weight: 700;	
+}
+.promise .midle .logo{
+	height: 100px;
+	width: auto;
+}
+.promise .midle .cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 60px 20px;
+	padding: 0;
+	width: 100%;
+	margin: 60px 0 !important;
+}
+.promise .midle .card{
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+	align-items: center;
+}
+.promise .midle .card img{
+	border-radius: 50%;
+	border: solid 5px #e8e2e2;
+	box-shadow: 5px 5px 15px rgba(0,0,0,.1);
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+.promise .midle .card h4{
+	color: #FD4731;
+	font-weight: 700;	
+	text-align: center;
+}
+.promise .midle .card p{
+	color: #2F4F4F;
+	text-align: center;
+}
+.promise .link span{
+	color: #000;
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+	.header h1{
+		padding: 30px 20px 20px !important;
+		text-align: left;
+		font-size: 2.1rem;
+	}
+	.header h1 span{
+		display: block;
+	}
+	.header div.midle{
+		grid-template-columns: 1fr;
+	}
+	.header h2{
+		text-align: left;
+	}
+	.header ul li{
+		text-align: left;
+	}
+	.promise .midle h2{
+		padding: 10px 20px;
+		text-align: center;
+	}
+	.promise .midle .cards{
+		grid-template-columns: 1fr;
+	}
+}
